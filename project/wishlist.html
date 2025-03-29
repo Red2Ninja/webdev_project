@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Wishlist</title>
+  <link rel="stylesheet" href="wishlist.css">
+  <style>
+        .logo-container {
+          display: flex;
+          align-items: center;
+          gap: 20px;
+        }
+        .logo-image {
+          width: 50px;  /* Reduced from 50px to 35px */
+          height: auto;
+        }
+        .brand-name {
+          font-size: 25px;
+          font-weight: bold;
+          color: white;
+        }
+        .header-left {
+          display: flex;
+          align-items: center;
+          gap: 10px;
+        }
+      </style>
+</head>
+<body>
+  <header id="header">
+    <nav>
+      <div class="logo-container">
+        <img src="./img/logo.png" alt="VITRestore Logo" class="logo-image">
+      </div>
+    </div>
+    <span class="brand-name">VITRestore</span>
+    </div>
+      <ul id="navbar">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="#" class="active">Wishlist</a></li>
+        <li><a href="cart.html">Cart</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <section class="wishlist-container">
+      <h1>Your Wishlist</h1>
+      <div class="wishlist-item">
+        <img src="./img/laptop.jpeg" alt="HP Laptop" class="item-image">
+        <div class="item-details">
+          <h2>HP Laptop</h2>
+          <p>Price: ₹20,000</p>
+          <p>Added on: Jan 1, 2025</p>
+          <div class="item-actions">
+            <button class="view-details">View Details</button>
+            <button class="remove-item">Remove</button>
+          </div>
+        </div>
+      </div>
+      <div class="wishlist-item">
+        <img src="./img/images.jpeg" alt="Hercules Cycle" class="item-image">
+        <div class="item-details">
+          <h2>Hercules Cycle</h2>
+          <p>Price: ₹4,000</p>
+          <p>Added on: Jan 2, 2025</p>
+          <div class="item-actions">
+            <button class="view-details">View Details</button>
+            <button class="remove-item">Remove</button>
+          </div>
+        </div>
+      </div>
+      <div class="wishlist-item">
+        <img src="./img/weight.jpg" alt="Weights" class="item-image">
+        <div class="item-details">
+          <h2>Weights</h2>
+          <p>Price: ₹1,000</p>
+          <p>Added on: Jan 3, 2025</p>
+          <div class="item-actions">
+            <button class="view-details">View Details</button>
+            <button class="remove-item">Remove</button>
+          </div>
+        </div>
+      </div>
+      <button class="proceed-to-checkout">Proceed to Checkout</button>
+    </section>
+  </main>
+  <footer class="section-p1">
+    <div class="col">
+      <h4>VITRestore</h4>
+      <p>© 2025 VITRestore. All rights reserved.</p>
+    </div>
+    <div class="social-icons">
+      <a href="#" class="social-icon">Facebook</a>
+      <a href="#" class="social-icon">Twitter</a>
+    </div>
+  </footer>
+</body>
+</html>

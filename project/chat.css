@@ -1,0 +1,104 @@
+body{
+    background-color: #120324;
+    margin: 0;
+    padding: 0;
+}
+#header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 80px;
+background-color:  #d0d5d6;
+}
+#bar{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0px 10px;
+   font-size: large;
+   font-family: "Jersey 15", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+#heading{
+    font-size: 20px;
+    font-family: "Jersey 15", serif;
+    font-weight: 500;
+    font-style: normal;
+    color: #d0d5d6;
+    padding: 5px 150px;
+    background-color: #120324;
+}
+#bar a{
+ text-decoration: none;
+ color: #7300ff;
+ transition: 0.3s ease;
+}
+.chat-area {
+    margin-top: 30%;
+    flex: 1;
+    overflow-y: auto;
+    padding: 20px;
+    background-color: #120324;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.message {
+    max-width: 75%;
+    padding: 10px;
+    border-radius: 8px;
+    position: relative;
+    font-size: 14px;
+}
+.message.received {
+    background-color: #e4e6eb;
+    align-self: flex-start;
+    font-family: "Jersey 15", serif;
+    font-size: 18px;
+}
+
+.message.sent {
+    background-color: #7300ff;
+    color: #d0d5d6;
+    align-self: flex-end;
+    font-family: "Jersey 15", serif;
+    font-size: 18px;
+}
+
+.message .timestamp {
+    font-size: 10px;
+    color: gray;
+    margin-top: 5px;
+    display: block;
+    text-align: right;
+}
+.message-input {
+    display: flex;
+    border-top: 1px solid #d0d5d6;
+    padding: 10px;
+    background-color: #fff;
+}
+
+.message-input input {
+    flex: 1;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    outline: none;
+    font-size: 16px;
+    font-family: "Jersey 15", serif;
+}
+
+.message-input button {
+    background-color: #7300ff;
+    color: white;
+    font-family: "Jersey 15", serif;
+    border: none;
+    padding: 10px 20px;
+    margin-left: 10px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: background-color 0.3s;
+}

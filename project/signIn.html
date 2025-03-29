@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sign Up and Login</title>
+  <style>
+    body {
+      font-family: "Jersey 15", serif;
+      background-color: #120324;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+
+    .container {
+      width: 350px;
+      padding: 20px;
+      background: #ffffff;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      border-radius: 4px;
+      text-align: center;
+    }
+
+    h2 {
+      margin-bottom: 20px;
+      color: #333;
+    }
+
+    form {
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+    }
+
+    input[type="text"],
+    input[type="email"],
+    input[type="password"] {
+      padding: 10px;
+      font-size: 14px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+
+    input[type="submit"] {
+      padding: 10px;
+      font-size: 16px;
+      color: #fff;
+      background-color: #007bff;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: background-color 0.3s;
+    }
+
+    input[type="submit"]:hover {
+      background-color: #0056b3;
+    }
+
+    .toggle-link {
+      margin-top: 10px;
+      font-size: 14px;
+      color: #007bff;
+      cursor: pointer;
+    }
+
+    .toggle-link:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+  <div class="container" id="signup-container">
+    <h2>Sign Up</h2>
+    <form>
+      <input type="text" placeholder="Full Name" required>
+      <input type="email" placeholder="Email Address" required>
+      <input type="password" placeholder="Password" required>
+      <input type="submit" value="Sign Up">
+    </form>
+    <a class="toggle-link" onclick="toggleForms()">Already have an account? Login</a>
+  </div>
+
+  <div class="container" id="login-container" style="display: none;">
+    <h2>Login</h2>
+    <form>
+      <input type="email" placeholder="Email Address" required>
+      <input type="password" placeholder="Password" required>
+      <input type="submit" value="Login">
+    </form>
+    <a class="toggle-link" onclick="toggleForms()">Don't have an account? Sign Up</a>
+  </div>
+
+  <script>
+    function toggleForms() {
+      const signupContainer = document.getElementById('signup-container');
+      const loginContainer = document.getElementById('login-container');
+
+      if (signupContainer.style.display === 'none') {
+        signupContainer.style.display = 'block';
+        loginContainer.style.display = 'none';
+      } else {
+        signupContainer.style.display = 'none';
+        loginContainer.style.display = 'block';
+      }
+    }
+  </script>
+</body>
+</html>
